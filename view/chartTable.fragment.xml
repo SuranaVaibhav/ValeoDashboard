@@ -5,7 +5,7 @@
     <beginButton>
       <Button text="OK" press="handleOkPressDialog" />
     </beginButton>
-
+ 
     <content>
       <!-- binding="{/ProductCollection/5}" -->
      
