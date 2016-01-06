@@ -1,0 +1,93 @@
+<core:FragmentDefinition xmlns="sap.m"
+  xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+  <Dialog title="Delayed Promise Table" class="sapUiPopupWithPadding"
+    placement="Right">
+    <beginButton>
+      <Button text="OK" press="handleOkPressDialog" />
+    </beginButton>
+
+    <content>
+      <!-- binding="{/ProductCollection/5}" -->
+     
+      <Table mode="None">
+
+        <columns>
+          <Column hAlign="Center" vAlign="Middle">
+            <header>
+              <ObjectIdentifier title=" Delivery ID" />
+            </header>
+          </Column>
+          <Column hAlign="Center" vAlign="Middle">
+            <header>
+              <ObjectIdentifier title="Item" />
+            </header>
+          </Column>
+          <Column hAlign="Center" vAlign="Middle" width="100px">
+            <header>
+              <ObjectIdentifier title="Material" />
+            </header>
+          </Column>
+               <Column hAlign="Center" vAlign="Middle" width="100px">
+            <header>
+              <ObjectIdentifier title="Order Quantity" />
+            </header>
+          </Column>
+               <Column hAlign="Center" vAlign="Middle" width="100px">
+            <header>
+              <ObjectIdentifier title="Call Date" />
+            </header>
+          </Column>
+           <Column hAlign="Center" vAlign="Middle" width="100px">
+            <header>
+              <ObjectIdentifier title="Promise Date" />
+            </header>
+          </Column>
+          <Column hAlign="Center" vAlign="Middle">
+            <header>
+              <ObjectIdentifier title="" />
+            </header>
+          </Column>
+
+
+        </columns>
+        <ColumnListItem  press="handleItemPress">
+          <cells>
+ 
+            <ObjectIdentifier text="24" />
+            <ObjectIdentifier text="ITEM001" />
+           <ObjectIdentifier text="0001" />
+            <ObjectIdentifier text="10" />
+            <ObjectIdentifier text="10/4/2015" />
+            <ObjectIdentifier text="15/2/2015" />
+
+          </cells>
+        </ColumnListItem>
+         <ColumnListItem  press="handleItemPress">
+          <cells>
+
+            <ObjectIdentifier text="14" />
+            <ObjectIdentifier text="ITEM002" />
+           <ObjectIdentifier text="0002" />
+            <ObjectIdentifier text="30" />
+            <ObjectIdentifier text="14/12/2015" />
+            <ObjectIdentifier text="15/5/2015" />
+
+          </cells>
+        </ColumnListItem>
+         <ColumnListItem  press="handleItemPress">
+          <cells>
+
+            <ObjectIdentifier text="28" />
+            <ObjectIdentifier text="ITEM003" />
+           <ObjectIdentifier text="0003" />
+            <ObjectIdentifier text="17" />
+            <ObjectIdentifier text="10/7/2015" />
+            <ObjectIdentifier text="20/8/2015" />
+
+          </cells>
+        </ColumnListItem>
+
+      </Table>
+    </content>
+  </Dialog>
+</core:FragmentDefinition>

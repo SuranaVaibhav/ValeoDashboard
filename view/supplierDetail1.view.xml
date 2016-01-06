@@ -1,0 +1,89 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="ValeoDashboard.view.supplierDetail1"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<customHeader>
+			<Toolbar>
+				<!-- <Button icon="sap-icon://nav-back" press="NavBack" /> -->
+				<!-- <ToolbarSpacer /> -->
+				<!-- <Title text="Details" id="detailid" /> -->
+				<!-- <ToolbarSpacer /> -->
+			</Toolbar>
+		</customHeader>
+		<content>
+			<ObjectHeader id="id1" title="{SupplierName}" number="{Vendor}">
+				<attributes>
+					<ObjectAttribute text="{Material}" />
+					<ObjectAttribute text="{Material Description}" />
+				</attributes>
+			</ObjectHeader>
+
+			<Table id="Supplier" visible="true">
+				<headerToolbar>
+					<Toolbar>
+						<Title text=" " />
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="Delivery Number" />
+					</Column>
+					<Column>
+						<Text text="Promise Date" />
+					</Column>
+					<Column>
+						<Text text="Promise Date" />
+					</Column>
+					<Column>
+						<Button icon="sap-icon://filter" />
+					</Column>
+					<Column>
+						<Text text="Pick Up Date" />
+					</Column>
+					<Column>
+						<Text text="Pick Up Confirmation" />
+					</Column>
+					<Column>
+						<Button icon="sap-icon://filter" />
+					</Column>
+					<Column>
+						<Text text="Delivery Date" />
+					</Column>
+					<Column>
+						<Text text="Delivery Confirmation" />
+					</Column>
+					<Column>
+						<Button icon="sap-icon://filter" />
+					</Column>
+					<Column>
+						<Text text="SSR" />
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation" press="navigate">
+						<cells>
+							<Text text="{Inbound delivery}"></Text>
+							<VBox><Text text="{Promise Date}"></Text><Text text="{Promise Time}"></Text></VBox>
+							<VBox><Text text="{Promised date}"></Text><Text text="{Promised Time}"></Text></VBox>
+							<core:Icon src=" "></core:Icon>
+							<VBox><Text text="{Pick up Date}"></Text><Text text="{Pick up time}"></Text></VBox>
+							<Text text="{Pick up confirmation}"></Text>
+							<core:Icon src=" "></core:Icon>
+							<VBox><Text text="{delivery Date}"></Text><Text text="{Delivery Time}"></Text></VBox>
+							<VBox><Text text="{Delivered date}"></Text><Text text="{Delivered time}"></Text></VBox>
+							<core:Icon src=" "></core:Icon>
+							<Text text=" "></Text>					
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+
+		<footer>
+			<Toolbar>
+
+
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>

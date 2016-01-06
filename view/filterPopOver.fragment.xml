@@ -1,0 +1,24 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Popover showHeader="false" contentWidth="320px" contentHeight="200px"
+		placement="Bottom">
+		<NavContainer id="navCon">
+			<Page id="master" title="Products">
+				<List id="list">
+					<StandardListItem title="Default" />
+					<StandardListItem title="Variant 1" />
+					<StandardListItem title="Variant 2" />
+				</List>
+			</Page>
+		</NavContainer>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button
+					id="email"
+					text="Save"
+					press="handlePress" />
+			</Toolbar>
+		</footer>
+	</Popover>
+</core:FragmentDefinition>

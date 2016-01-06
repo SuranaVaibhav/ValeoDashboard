@@ -1,0 +1,58 @@
+{
+"deliver":[{
+"Attribute" : "12/12/2015",
+"Attribute1" : "18:00:10",
+"num" : "25%",
+"Dnum" : "2800724",
+"Item" : "10",
+"Material" : "CVN-COM",
+"mDescription" : "cvn-com",
+"orderQty" : "300",
+"prmsQty" : "300",
+"pQty" : "0",
+"dQty" : "250",
+"Qstatus" : " ",
+"filter" : " ",
+"unit" : "ST",
+"GM" : "A",
+"ssr" : " "
+},
+
+{
+"Attribute" : "14/12/2015",
+"Attribute1" : "12:00:00",
+"num" : "25%",
+"Dnum" : "2800724",
+"Item" : "10",
+"Material" : "CVN-COM",
+"mDescription" : "cvn-com",
+"orderQty" : "300",
+"prmsQty" : "300",
+"pQty" : "0",
+"dQty" : "250",
+"Qstatus" : " ",
+"filter" : " ",
+"unit" : "ST",
+"GM" : "A",
+"ssr" : " "
+},
+{
+"Attribute" : "12/11/2015",
+"Attribute1" : "18:00:10",
+"num" : "25%",
+"Dnum" : "2800724",
+"Item" : "4",
+"Material" : "YS-COM11",
+"mDescription" : "YS-com11",
+"orderQty" : "250",
+"prmsQty" : "250",
+"pQty" : "0",
+"dQty" : "250",
+"Qstatus" : " ",
+"filter" : " ",
+"unit" : "ST",
+"GM" : "A",
+"ssr" : " "
+}
+]
+}

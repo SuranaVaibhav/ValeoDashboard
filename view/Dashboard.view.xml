@@ -1,0 +1,158 @@
+<core:View controllerName="ValeoDashboard.view.Dashboard"
+	xmlns:fb="sap.ui.comp.filterbar" xmlns:ui="sap.ui.commons" xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns="sap.m">
+
+
+	<!-- <Page id="dashboardView" -->
+
+	<!-- showHeader="false" -->
+	<!-- showNavButton="false"> -->
+	<!-- <content> -->
+	<l:VerticalLayout width="100%">
+ 
+		<fb:FilterBar showRestoreButton="false" showClearButton="false"
+			filterBarExpanded="false" showGoOnFB="false">
+			<fb:filterItems>
+				<fb:FilterItem name="saveVariant" label="Save Variant ">
+					<fb:control>
+						<HBox>
+							<!-- <Title text="Save Variant " /> -->
+							<!-- <Title text=" " /> -->
+							<core:Icon src="sap-icon://arrow-down" press="variantDrop" />
+						</HBox>
+
+					</fb:control>
+				</fb:FilterItem>
+
+				<fb:FilterItem name="filter" label="Filter">
+					<fb:control>
+						<VBox>
+							<!-- <Label text="Filter" /> -->
+							<Select id="select1" change="onChangeFilter" selectedKey="None">
+								<items>
+									<core:Item key="None" text="None" />
+									<core:Item key="Intermediary" text="Intermediary" />
+									<core:Item key="Supplier" text="Supplier" />
+								</items>
+							</Select>
+						</VBox>
+
+					</fb:control>
+				</fb:FilterItem>
+
+				<fb:FilterItem name="supplier" label="Supplier">
+					<fb:control>
+						<VBox id="supplier" visible="false">
+							<!-- <Label text="Supplier" /> -->
+
+							<Select id="select3" items="{/}" change="onSupplierSelect">
+								<items>
+									<core:Item text="{SupplierName}" key="{SupplierName}" />
+
+								</items>
+							</Select>
+						</VBox>
+					</fb:control>
+				</fb:FilterItem>
+
+				<fb:FilterItem name="Dana" label="Select">
+					<fb:control>
+						<VBox id="select" visible="false">
+							<!-- <Label text="Select" /> -->
+							<MultiComboBox id="multiSelect" selectionChange="handleSelectionChange"
+								selectionFinish="handleSelectionFinish" width="500px">
+								<core:Item key="key1" text="Delayed Promises" />
+								<core:Item key="key2" text="Delayed Pick Up" />
+								<core:Item key="key3" text="Delayed Delivery" />
+								<core:Item key="key4" text="Promise Confirmation Rate" />
+								<core:Item key="key5" text="Delivery Progress Rate" />
+								<core:Item key="key6" text="Reception Effort" />
+							</MultiComboBox>
+						</VBox>
+					</fb:control>
+				</fb:FilterItem>
+			</fb:filterItems>
+		</fb:FilterBar>
+	</l:VerticalLayout>
+	<TileContainer height="1000px">
+		<CustomTile id="NumberDelayedPromises" press="chartTable"
+			class="customTile sapMTile">
+
+
+
+		</CustomTile>
+		<CustomTile id="LatePickUp" press="chartTable" class="customTile sapMTile">
+
+
+
+
+		</CustomTile>
+		<CustomTile id="LateDeliveries" press="chartTable" class="customTile sapMTile">
+
+
+
+
+		</CustomTile>
+		<CustomTile id="PromiseConfirmationRate" class="customTile sapMTile">
+
+
+
+
+		</CustomTile>
+		<CustomTile id="DeliveryProgressRate" press="chartTable"
+			class="customTile sapMTile">
+			<content>
+				<Label text="Delivery Progress Rate" class="label">
+
+
+				</Label>
+
+
+			</content>
+
+
+
+		</CustomTile>
+
+		<CustomTile id="ReceptionEffort" press="chartTable"
+			class="customTile sapMTile">
+			<content>
+				<Label text="Reception Effort" class="label">
+
+
+				</Label>
+
+
+			</content>
+
+
+
+		</CustomTile>
+
+		<CustomTile id="ReceptionPlannedActual" class="customTileBig sapMTile">
+			<content>
+				<Label text="Reception Planned vs Actual" class="label">
+
+
+				</Label>
+
+
+			</content>
+
+
+
+		</CustomTile>
+	</TileContainer>
+	<VBox height="120px">
+
+	</VBox>
+
+
+	<!-- </content> -->
+
+
+
+
+
+	<!-- </Page> -->
+</core:View>

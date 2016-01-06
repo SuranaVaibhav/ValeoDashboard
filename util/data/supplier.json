@@ -1,0 +1,72 @@
+{
+"supplier":[{
+"Snum" : "100170",
+"Attribute" : "Meta Box",
+"Attribute1" : "SA France",
+"num" : "25%",
+"Dnum" : "2800724",
+"pDate" : "14/12/2015",
+"pDate1" : "14/12/2015",
+"filter" : " ",
+"pickDate" : "14/12/2015",
+"pickConfirm" : "15/12/2015",
+"filter2" : " ",
+"dDate" : " ",
+"dConfirm" : " ",
+"filter3" : " ",
+"ssr" : " "
+},
+
+{	
+"Snum" : "100171",
+"Attribute" : "Meta Box",
+"Attribute1" : "SA France",
+"num" : "50%",
+"Dnum" : "2800726",
+"pDate" : "13/12/2015",
+"pDate1" : "13/12/2015",
+"filter" : "",
+"pickDate" : "13/12/2015",
+"pickConfirm" : "15/12/2015",
+"filter2" : "",
+"dDate" : "",
+"dConfirm" : "",
+"filter3" : "",
+"ssr" : ""
+},
+{	
+"Snum" : "100172",
+"Attribute" : "Gears",
+"Attribute1" : "NA France",
+"num" : "62%",
+"Dnum" : "2800732",
+"pDate" : "13/12/2015",
+"pDate1" : "13/12/2015",
+"filter" : "",
+"pickDate" : "13/12/2015",
+"pickConfirm" : "15/12/2015",
+"filter2" : "",
+"dDate" : "",
+"dConfirm" : "14/11/2015",
+"filter3" : "",
+"ssr" : ""
+},
+{	
+"Snum" : "100173",
+"Attribute" : "Disc",
+"Attribute1" : "SA France",
+"num" : "30%",
+"Dnum" : "2800733",
+"pDate" : "13/12/2015",
+"pDate1" : "13/12/2015",
+"filter" : "",
+"pickDate" : "13/12/2015",
+"pickConfirm" : "15/12/2015",
+"filter2" : "",
+"dDate" : "",
+"dConfirm" : "14/11/2015",
+"filter3" : "",
+"ssr" : ""
+}
+]
+}

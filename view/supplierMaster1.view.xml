@@ -1,0 +1,46 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ValeoDashboard.view.supplierMaster1" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="MASTER">
+		<customHeader>
+			<Toolbar>
+				<Button icon="sap-icon://nav-back" press="handleHomeSelect" />
+				<ToolbarSpacer />
+				<Title text="Supplier" id="supid" />
+				<ToolbarSpacer />
+			</Toolbar>
+		</customHeader>
+
+		<subHeader>
+			<Bar id="searchBar">
+				<contentMiddle>
+					<SearchField id="searchField" showRefreshButton="true" liveChange="handleSearch" search="onSearch" width="100%">
+					</SearchField>
+				</contentMiddle>
+			</Bar>
+		</subHeader>
+		<content>
+			<!-- <SearchField showRefreshButton="true" tooltip="enter project name" liveChange="onSearch"></SearchField> -->
+		</content>
+		<List id="supplierMasterList" growingScrollToLoad="true" growing="true" items="{/}">
+			<items>
+				<ObjectListItem id="objectItem3" type="Active"  title="{SupplierName}" number="{Vendor}" press="onPress">
+					<firstStatus>
+						<ObjectStatus />
+					</firstStatus>
+					<attributes>
+					    
+						<ObjectAttribute text="{Material}" />
+						<ObjectAttribute text="{Material Description}" />
+					</attributes>
+				</ObjectListItem>
+
+				<!-- <ObjectListItem id="objectItem" type="Active" title="100171" number="50%" press="onPress"> <firstStatus> <ObjectStatus/> </firstStatus> <attributes> <ObjectAttribute text="Gears" /> <ObjectAttribute text="SA FRANCE" /> </attributes> </ObjectListItem> <ObjectListItem 
+					id="objectItem1" type="Active" title="100172" number="62%" press="onPress"> <firstStatus> <ObjectStatus/> </firstStatus> <attributes> <ObjectAttribute text="Disc" /> <ObjectAttribute text="SA FRANCE" /> </attributes> </ObjectListItem> <ObjectListItem id="objectItem2" type="Active" 
+					title="100173" number="30%" press="onPress"> <firstStatus> <ObjectStatus/> </firstStatus> <attributes> <ObjectAttribute text="Metal Sheet" /> <ObjectAttribute text="SA FRANCE" /> </attributes> </ObjectListItem> -->
+			</items>
+		</List>
+		<footer>
+			<Toolbar>
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>

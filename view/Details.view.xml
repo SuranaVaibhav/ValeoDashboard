@@ -1,0 +1,340 @@
+<core:View controllerName="ValeoDashboard.view.Details" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:ui="sap.ca.ui" xmlns="sap.m">
+
+	
+			<Page id="tableView"
+			
+				showHeader="false"
+				showNavButton="false">
+				<!--<customHeader>-->
+				<!--	<Bar>-->
+				<!--	<contentLeft>-->
+				<!--	<Label text="Electronic Reorder Monitor"/>-->
+				<!--			</contentLeft>-->
+			
+				<!--	<contentMiddle>-->
+				<!--	<Label text="Dashboard"/>-->
+				<!--<Switch id="switch2" change="switchChange" state="true" customTextOn="D" customTextOff="T">-->
+				<!--	<layoutData>-->
+				<!--		<FlexItemData growFactor="1" />-->
+				<!--	</layoutData>-->
+				<!--</Switch>-->
+				<!--<Label text="Table"/>-->
+				<!--		</contentMiddle>-->
+				<!--	<contentRight>-->
+				<!--		<Button iconOnly="true" icon="sap-icon://money-bills"/>-->
+				<!--			<Button iconOnly="true" icon="sap-icon://e-care"/>	-->
+				<!--				<Button iconOnly="true" press="notifications" icon="sap-icon://marketing-campaign"/>-->
+		
+				<!--	</contentRight>-->
+						
+						
+				<!--	</Bar>-->
+				<!--	</customHeader>-->
+						<content>
+						
+				
+			<Table class="navTableControlLayout" growing="true" growingScrollToLoad="true" id="navigationTable">
+				<headerToolbar id="navigationTable_headerToolbar">
+					<Toolbar id="navigationTable_headerToolbar_toolbar">
+						<Label class="sapMH4FontSize" id="navigationTable_headerToolbar_toolbar_title" text=""/>
+					</Toolbar>
+				</headerToolbar>
+				<columns id="navigationTable_columns">
+					
+					<Column demandPopin="true" hAlign="Left" id="navigationTable_columns_col2" minScreenWidth="Tablet" vAlign="Top" width="33%">
+						<header id="navigationTable_columns_col2_header">
+							<Label id="navigationTable_columns_col2_header_label" text="Delivery Number"/>
+						</header>
+					</Column>
+					<Column demandPopin="true" hAlign="Left" id="navigationTable_columns_col3" minScreenWidth="Tablet" vAlign="Top" width="33%">
+						<header id="navigationTable_columns_col3_header">
+							<Label id="navigationTable_columns_col3_header_label" text="Progress"/>
+						</header>
+					</Column>
+						<Column demandPopin="true" hAlign="Left" id="navigationTable_columns_col4" minScreenWidth="Tablet" vAlign="Top" width="33%">
+						<header id="navigationTable_columns_col4_header">
+							<Label id="navigationTable_columns_col4_header_label" text="Expected Delivery"/>
+						</header>
+					</Column>
+					
+					<!--<Column demandPopin="true" hAlign="Left" id="navigationTable_columns_col5" minScreenWidth="Tablet" vAlign="Top" width="33%">-->
+					<!--	<header id="navigationTable_columns_col5_header">-->
+					<!--		<Label id="navigationTable_columns_col5_header_label" text=""/>-->
+					<!--	</header>-->
+					<!--</Column>-->
+				</columns>
+				
+			
+		
+		
+		
+				<ColumnListItem id="navigationListItem1" mode="none" press="navigate" type="Navigation">
+					<cells >
+					<ObjectIdentifier
+						title=" "
+						text="80022734"/>
+				
+						<ProgressIndicator
+				class="sapUiSmallMarginBottom" 
+				percentValue="30"
+				width="60%"
+				showValue="true"
+				state="None" />
+						<Text  text="13/9/2015"/>
+					</cells>
+				</ColumnListItem>
+				
+					<ColumnListItem id="navigationListItem2" mode="none" press="navigate" type="Navigation">
+					<cells >
+					<ObjectIdentifier
+						title=" "
+						text="80022735"/>	
+						<ProgressIndicator
+				class="sapUiSmallMarginBottom" 
+				percentValue="30"
+					width="60%"
+				showValue="true"
+				state="None" />
+						<Text  text="13/9/2015"/>
+					</cells>
+				</ColumnListItem>
+				
+					<ColumnListItem id="navigationListItem3" mode="none" press="navigate" type="Navigation">
+					<cells >
+						<ObjectIdentifier
+						title=" "
+						text="80022736"/>	
+						<ProgressIndicator
+				class="sapUiSmallMarginBottom" 
+				percentValue="50"
+					width="60%"
+				showValue="false"
+				state="Error" />
+						<Text  text="14/9/2015"/>
+					</cells>
+				</ColumnListItem>
+				
+					<ColumnListItem id="navigationListItem4" mode="none" press="navigate" type="Navigation">
+					<cells>
+						<ObjectIdentifier
+						title=" "
+						text="80022737"/>	
+						<ProgressIndicator
+				class="sapUiSmallMarginBottom" 
+				percentValue="99"
+				width="60%"
+				showValue="true"
+				state="Success" />
+						<Text  text="14/9/2015"/>
+					</cells>
+				</ColumnListItem>
+					<ColumnListItem id="navigationListItem5" mode="none" press="navigate" type="Navigation">
+					<cells>
+					<ObjectIdentifier
+						title=" "
+						text="80022738"/>	
+						<ProgressIndicator
+				class="sapUiSmallMarginBottom" 
+				percentValue="25"
+				width="60%"
+				showValue="true"
+				state="Warning" />
+						<Text  text="14/9/2015"/>
+					</cells>
+				</ColumnListItem>
+					<ColumnListItem id="navigationListItem6" mode="none" press="navigate" type="Navigation">
+					<cells>
+						<ObjectIdentifier
+						title=" "
+						text="80022739"/>	
+						<ProgressIndicator
+				class="sapUiSmallMarginBottom" 
+				percentValue="25"
+				width="60%"
+				showValue="true"
+				state="Warning" />
+						<Text  text="15/9/2015"/>
+					</cells>
+				</ColumnListItem>
+					<ColumnListItem id="navigationListItem7"  mode="none" press="navigate" type="Navigation">
+					<cells>
+					<ObjectIdentifier
+						title=" "
+						text="80022740"/>	
+						<ProgressIndicator
+				class="sapUiSmallMarginBottom" 
+				percentValue="25"
+					width="60%"
+				showValue="true"
+				state="Warning" />
+						<Text  text="15/9/2015"/>
+					</cells>
+				</ColumnListItem>
+				
+			</Table>
+				
+					
+				<Table class="navTableControlLayout" visible="false" id="secondTable" growing="true" growingScrollToLoad="true" >
+				<headerToolbar >
+					<Toolbar >
+						<Button iconOnly="true" press="backButton" id="backButton" visible="false" icon="sap-icon://nav-back"/>	
+					</Toolbar>
+				</headerToolbar>
+				<columns >
+					
+					<Column demandPopin="true" hAlign="Left"  minScreenWidth="Tablet" vAlign="Top" width="33%">
+						<header >
+							<Label  text="ID Item"/>
+						</header>
+					</Column>
+					<Column demandPopin="true" hAlign="Left" minScreenWidth="Tablet" vAlign="Top" width="33%">
+						<header >
+							<Label  text="QT KB Total"/>
+						</header>
+					</Column>
+						<Column demandPopin="true" hAlign="Left"  minScreenWidth="Tablet" vAlign="Top" width="33%">
+						<header >
+							<Label  text="QT Produced"/>
+						</header>
+					</Column>
+					
+						<Column demandPopin="true" hAlign="Left"  minScreenWidth="Tablet" vAlign="Top" width="33%">
+						<header >
+							<Label  text="QT Transit"/>
+						</header>
+					</Column>
+					
+						<Column demandPopin="true" hAlign="Left"  minScreenWidth="Tablet" vAlign="Top" width="33%">
+						<header >
+							<Label  text="QT Empty"/>
+						</header>
+					</Column>
+					
+						<Column demandPopin="true" hAlign="Left"  minScreenWidth="Tablet" vAlign="Top" width="33%">
+						<header >
+							<Label  text="Progress(%)"/>
+						</header>
+					</Column>
+					
+					<Column demandPopin="true" hAlign="Left"  minScreenWidth="Tablet" vAlign="Top" width="33%">
+						<header >
+							<Label  text="Date"/>
+						</header>
+					</Column>
+					
+					<!--<Column demandPopin="true" hAlign="Left" id="navigationTable_columns_col5" minScreenWidth="Tablet" vAlign="Top" width="33%">-->
+					<!--	<header id="navigationTable_columns_col5_header">-->
+					<!--		<Label id="navigationTable_columns_col5_header_label" text=""/>-->
+					<!--	</header>-->
+					<!--</Column>-->
+				</columns>
+				
+			
+		
+		
+		
+				<ColumnListItem >
+					<cells >
+					<ObjectIdentifier
+						title=" "
+						text="24"/>
+				<Text  text="15"/>
+				<Text  text="20"/>
+				<Text  text="36"/>
+				<Text  text="40"/>
+						<ProgressIndicator
+				class="sapUiSmallMarginBottom" 
+				percentValue="30"
+				width="60%"
+				showValue="true"
+				state="None" />
+						<Text  text="13/9/2015"/>
+					</cells>
+				</ColumnListItem>
+				
+					<ColumnListItem >
+					<cells >
+					<ObjectIdentifier
+						title=" "
+						text="40"/>	
+						<Text  text="15"/>
+				<Text  text="25"/>
+				<Text  text="6"/>
+				<Text  text="45"/>
+						<ProgressIndicator
+				class="sapUiSmallMarginBottom" 
+				percentValue="30"
+					width="60%"
+				showValue="true"
+				state="None" />
+						<Text  text="13/9/2015"/>
+					</cells>
+				</ColumnListItem>
+				
+					<ColumnListItem  >
+					<cells >
+						<ObjectIdentifier
+						title=" "
+						text="45"/>	
+						<Text  text="15"/>
+				<Text  text="14"/>
+				<Text  text="36"/>
+				<Text  text="80"/>
+						<ProgressIndicator
+				class="sapUiSmallMarginBottom" 
+				percentValue="50"
+					width="60%"
+				showValue="false"
+				state="Error" />
+						<Text  text="14/9/2015"/>
+					</cells>
+				</ColumnListItem>
+				
+					<ColumnListItem  >
+					<cells>
+						<ObjectIdentifier
+						title=" "
+						text="27"/>	
+						<Text  text="15"/>
+				<Text  text="6"/>
+				<Text  text="3"/>
+				<Text  text="4"/>
+						<ProgressIndicator
+				class="sapUiSmallMarginBottom" 
+				percentValue="99"
+				width="60%"
+				showValue="true"
+				state="Success" />
+						<Text  text="14/9/2015"/>
+					</cells>
+				</ColumnListItem>
+					<ColumnListItem  >
+					<cells>
+					<ObjectIdentifier
+						title=" "
+						text="76"/>	
+						<Text  text="15"/>
+				<Text  text="14"/>
+				<Text  text="16"/>
+				<Text  text="17"/>
+						<ProgressIndicator
+				class="sapUiSmallMarginBottom" 
+				percentValue="25"
+				width="60%"
+				showValue="true"
+				state="Warning" />
+						<Text  text="14/9/2015"/>
+					</cells>
+				</ColumnListItem>
+				
+					
+				
+			</Table>			
+				
+
+			
+		</content>
+	
+	</Page>
+</core:View>

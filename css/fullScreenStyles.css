@@ -1,0 +1,203 @@
+.navTableControlLayout {
+	padding: 1rem 2rem 0 2rem;
+}
+
+.sap-tablet .navTableControlLayout {
+	padding: 1rem 1rem 1rem 1rem;
+}
+
+.sap-phone .navTableControlLayout {
+	padding: 0 0 0 0;
+}
+.sapMShellBrandingBar {
+	background-color: #95d238 !important;
+}
+.navTableItemLayout {
+	min-height: 5rem;
+	padding: 1rem 0 1rem 0;
+}
+
+.legend {
+	font-size: 2.5rem;
+}
+
+rect {
+	stroke-width: 1;
+}
+
+.customTile {
+	padding: 20px;
+	background: white;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	/* 	border-style: outset; */
+	/* 	border-width: 5px; */
+/* 	width: 460px; */
+width:28rem;
+	height: 400px;
+}
+
+.customTileBig {
+	background: white;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	padding: 20px;
+	/* 	border-style: outset; */
+	/* 	border-width: 5px; */
+	width: 900px;
+	height: 400px;
+}
+.bottom2rem{
+	bottom: 2.2rem;
+}
+.bigFont {
+	font-size: 3rem !important;
+	margin: 7px !important;
+}
+
+.mediumFont {
+	font-size: 1.2rem !important;
+	margin: 18px !important;
+}
+.chartLabel{
+	font-size: 1rem !important;
+}
+.sapMBtnCustomIcon sapMBtnIcon sapMImg {
+	height: 21px !important;
+	width: 21px !important;
+	padding-top: 4rem !important;
+}
+
+.sapMPage {
+	background-color: #F6F6F6 !important;
+}
+
+/* #__button16-img{ */
+/* 	height:21px !important; */
+/* 	width:21px !important; */
+/* 	padding-top:4rem !important; */
+
+/* } */
+/* #__button15-img{ */
+/* 	height:21px !important; */
+/* 	width:21px !important; */
+/* 	padding-top:4rem !important; */
+
+/* } */
+#__bar0-BarLeft {
+	height: 3.8rem !important;
+}
+
+#__bar0 {
+	height: 3.8rem !important;
+}
+
+.canvasjs-chart-credit {
+	visibility: hidden !important;
+}
+
+/* #__label7 __label8 __label9 __label10 __label11 __label12 __label13 { */
+/* 	padding: 10px !important; */
+/* } */
+
+/* #__label7 { */
+/* 	padding: 10px !important; */
+/* } */
+
+/* #__label8 { */
+/* 	padding: 10px !important; */
+/* } */
+
+/* #__label9 { */
+/* 	padding: 10px !important; */
+/* } */
+
+/* #__label10 { */
+/* 	padding: 10px !important; */
+/* } */
+
+/* #__label11 { */
+/* 	padding: 10px !important; */
+/* } */
+
+/* #__label12 { */
+/* 	padding: 10px !important; */
+/* } */
+
+/* #__label13 { */
+/* 	padding: 10px !important; */
+/* } */
+
+/* #__label0 { */
+/* 	padding-top: 5px; */
+/* 	margin-top: 13px; */
+/* } */
+
+.__xmlview0--switch {
+	margin: 5px !important;
+}
+
+.sapUiSizeCompact .sapMBtn {
+	height: 2.000rem;
+	padding: 0.5rem 0 !important;
+}
+
+.sapMSplitContainerMaster {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 320px;
+	/* float: right !important; */
+	/* 	left: 0; */
+}
+/* .sapUiSizeCompact .sapMSwt { */
+/*     width: 5.5rem !important; */
+/*     height: 1.625rem; */
+/* } */
+/* #__xmlview1{ */
+/* 	padding : 25px !important; */
+
+/* } */
+
+/* #dashboardView{ */
+
+/* 	padding : 25px !important; */
+
+/* } */
+.sapUiSizeCompact .sapMPI {
+	height: 0.625rem !important;
+}
+
+.sapMSplitContainerPortrait.sapMSplitContainerShowHide>.sapMSplitContainerMasterHidden,
+	.sapMSplitContainerHideMode>.sapMSplitContainerMasterHidden {
+	transform: translate3d(-330px, 0, 0) !important;
+	transition: all 0ms;
+	/* -webkit-transform: translate3d(-330px,0,0); */
+	-webkit-transition: all 0ms;
+	-moz-transform: translate3d(0, 0, 0) !important;
+	-moz-transition: all 0ms !important;
+}
+
+.filterBarVarient {
+	margin-right: 1rem;
+}
+
+#__label10 {
+/* 	color: white; */
+}
+
+#__label11 {
+/* 	color: white; */
+}
+
+#__label9 {
+/* 	color: white; */
+}
+
+#__label8 {
+/* 	color: white; */
+}
+
+#__label7 {
+/* 	color: white; */
+}

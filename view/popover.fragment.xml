@@ -1,0 +1,28 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ResponsivePopover contentWidth="30%"
+			contentHeight="100%" title="{Name}" class="sapUiPopupWithPadding"
+		placement="Bottom">
+		<customHeader>
+			<Toolbar>
+				<content>
+				    <Button  text="All" press="onPress"/>
+				    <ToolbarSpacer/>
+					<Button  icon="util/Images/sad.PNG" press="onPress"/>
+					<ToolbarSpacer/>
+					<Button  icon="util/Images/happy.PNG" press="onPress"/>
+					<ToolbarSpacer/>
+				</content>
+			</Toolbar>
+		</customHeader>
+		<content>
+			<List items="{/popover}">
+				<ObjectListItem icon="{icon}" title="{title}" key="{key}">
+				    <attributes>
+				        <ObjectAttribute text="{text}"/>
+				    </attributes>
+				     </ObjectListItem>
+			</List>
+		</content>
+	</ResponsivePopover>
+</core:FragmentDefinition>

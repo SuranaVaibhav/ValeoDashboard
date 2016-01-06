@@ -1,0 +1,13 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"
+	controllerName="ValeoDashboard.view.SplitApp2" displayBlock="true" height="100%">
+	
+		<SplitApp id="fioriContent" showHeader="true" mode="StretchCompressMode">
+			<masterPages>
+			<mvc:XMLView viewName="ValeoDashboard.view.deliveryMaster2" id="master1"></mvc:XMLView>
+		</masterPages>
+		<detailPages>
+			<mvc:XMLView viewName="ValeoDashboard.view.deliveryDetail2" id="detail1"></mvc:XMLView>
+		</detailPages>
+		</SplitApp>
+	
+</mvc:View>

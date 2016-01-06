@@ -1,0 +1,82 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:fb="sap.ui.comp.filterbar"
+	xmlns:l="sap.ui.layout" xmlns:ui="sap.ui.commons" displayBlock="true"
+	controllerName="ValeoDashboard.view.Main" height="100%" xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+
+
+
+	<App id="fioriContent">
+
+
+		<Page showHeader="true" id="mainPage">
+
+
+			<customHeader>
+				<Bar>
+					<contentLeft>
+						<Text class="mediumFont" text="Electronic Reorder Monitor" />
+					</contentLeft>
+
+					<contentMiddle>
+						<Text class="mediumFont" text="Dashboard" />
+						<Switch id="switch" change="switchChange" state="false"
+							customTextOn=" " customTextOff=" ">
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Switch>
+						<Text class="mediumFont" text="Table" />
+
+						<Button enabled="false" text=" " />
+						<Button enabled="false" text=" " />
+
+					</contentMiddle>
+					<contentRight>
+						<!-- <HBox id="timer"> -->
+						<Button iconOnly="true" icon="sap-icon://money-bills" />
+						<Button iconOnly="true" icon="sap-icon://e-care" />
+						<Button iconOnly="true" icon="sap-icon://marketing-campaign"
+							press="showPopOver" />
+						<Text class="bigFont" id="bigFont" text="13:50:55" />
+						<!-- <core:HTML id="Container" -->
+						<!-- content="&lt;div id=&quot;clock&quot; class=&quot;light&quot;&gt; 
+							&lt;div class=&quot;display&quot;&gt; &lt;div class=&quot;weekdays1&quot; 
+							&gt; &lt;/div&gt; &lt;div class=&quot;ampm&quot; &gt; &lt;/div&gt; &lt;div 
+							class=&quot;alarm&quot; &gt; &lt;/div&gt; &lt;div class=&quot;digits&quot;&gt; 
+							&lt;/div&gt; &lt;/div&gt; " /> -->
+						<!-- </HBox> -->
+					</contentRight>
+				</Bar>
+			</customHeader>
+
+			<content>
+				<!-- <SplitApp id="splitApp" mode="HideMode" showHeader="false"> -->
+				<!-- <detailPages> -->
+				<!-- filled dynamically by routing -->
+				<mvc:XMLView viewName="ValeoDashboard.view.Dashboard">
+				</mvc:XMLView>
+				<!-- </detailPages> -->
+				<!-- <masterPages> -->
+				<!-- <mvc:XMLView viewName="ValeoDashboard.view.Master"> -->
+				<!-- </mvc:XMLView> -->
+				<!-- </masterPages> -->
+				<!-- </SplitApp> -->
+			</content>
+			<footer id="Footer">
+				<Toolbar>
+					<content>
+
+					</content>
+				</Toolbar>
+			</footer>
+
+		</Page>
+
+
+
+
+
+
+
+	</App>
+</mvc:View>

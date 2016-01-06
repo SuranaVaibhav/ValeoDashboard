@@ -1,0 +1,13 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="ValeoDashboard.view.TileAddButtonDetail" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<customHeader>
+			<Toolbar>
+			    <Button icon="sap-icon://nav-back" press="NavBack"/>
+				<ToolbarSpacer />
+				<Title text="Details" id="detailid" />				
+				<ToolbarSpacer />
+			</Toolbar>
+		</customHeader>
+	</Page>
+</core:View>

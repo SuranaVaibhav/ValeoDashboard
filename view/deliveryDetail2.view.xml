@@ -1,0 +1,93 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="ValeoDashboard.view.deliveryDetail2"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<customHeader>
+			<Toolbar>
+
+				<ToolbarSpacer />
+				<Title text="Details" id="detailid" />
+				<ToolbarSpacer />
+			</Toolbar>
+		</customHeader>
+		<content>
+			<ObjectHeader id="id1" title="{Inbound delivery}" number=" ">
+				<attributes>
+					<ObjectAttribute text="{Delivered date}" />
+					<ObjectAttribute text="{Delivered time}" />
+				</attributes>
+			</ObjectHeader>
+
+			<Table id="Supplier" visible="true">
+				<headerToolbar>
+					<Toolbar>
+						<Title text=" " />
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="Item" />
+					</Column>
+					<Column>
+						<Text text="Material" />
+					</Column>
+					<Column>
+						<Text text="Material Description" />
+					</Column>
+					<Column>
+						<Text text="Order Qty" />
+					</Column>
+					<Column>
+						<Text text="Promise Qty" />
+					</Column>
+					<Column>
+						<Text text="Pick Up Qty" />
+					</Column>
+					<Column>
+						<Text text="Delivery Qty" />
+					</Column>
+					<Column>
+						<Text text="Qty Status" />
+					</Column>
+					<Column>
+						<Button icon="sap-icon://filter" />
+					</Column>
+					<Column>
+						<Text text="Unit" />
+					</Column>
+					<Column>
+						<Text text="GM" />
+					</Column>
+					<Column>
+						<Text text="SSR" />
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Text text="{Item}"></Text>
+							<Text text="{Material}"></Text>
+							<Text text="{Material Description}"></Text>
+							<Text text="{Call Qty}"></Text>
+							<Text text="{Promised Qty}"></Text>
+							<Text text="{Pick up Qty}"></Text>
+							<Text text="{Delivered Qty}"></Text>
+							<Text text="{Qstatus}"></Text>
+							<core:Icon src=" "></core:Icon>
+							<Text text="{Units}"></Text>
+							<Text text=" "></Text>
+							<Text text=" "></Text>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+
+		<footer>
+			<Toolbar>
+
+
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>

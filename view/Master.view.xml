@@ -1,0 +1,201 @@
+<core:View controllerName="ValeoDashboard.view.Master" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:table="sap.ui.table"
+	xmlns="sap.m">
+
+
+			<Page
+				id="sideContentContainer"
+				showHeader="false"
+				showNavButton="false">
+				<!--<customHeader>-->
+				<!--	<Bar>-->
+				<!--	<contentLeft>-->
+				<!--	<Label text="Electronic Reorder Monitor"/>-->
+				<!--			</contentLeft>-->
+			
+				<!--	<contentMiddle>-->
+				<!--	<Label text="Dashboard"/>-->
+				<!--<Switch id="switch" change="switchChange" state="false" customTextOn="D" customTextOff="T">-->
+				<!--	<layoutData>-->
+				<!--		<FlexItemData growFactor="1" />-->
+				<!--	</layoutData>-->
+				<!--</Switch>-->
+				<!--<Label text="Table"/>-->
+				<!--		</contentMiddle>-->
+				<!--	<contentRight>-->
+				<!--		<Button iconOnly="true" icon="sap-icon://money-bills"/>-->
+				<!--			<Button iconOnly="true" icon="sap-icon://e-care"/>	-->
+				<!--				<Button iconOnly="true" press="notifications" icon="sap-icon://marketing-campaign"/>-->
+		
+				<!--	</contentRight>-->
+						
+						
+				<!--	</Bar>-->
+				<!--	</customHeader>-->
+							<content>
+			<!--	<l:DynamicSideContent-->
+			
+			<!--		id="DynamicSideContent"-->
+					
+			<!--		class="sapUiDSCExplored sapUiContentPadding"-->
+			<!--		containerQuery="true"-->
+			<!--		sideContentFallDown="BelowM"-->
+			<!--		breakpointChanged="updateToggleButtonState">-->
+			<!--		<l:mainContent>-->
+					
+			<!--<CustomTile  class="customTile">-->
+			<!--			<content>-->
+			<!--			<Label text="Number of delayed promises">-->
+							
+							
+			<!--			</Label>	-->
+							
+							
+			<!--			</content>-->
+						
+						
+						
+			<!--		</CustomTile>-->
+			<!--		<CustomTile  class="customTile">-->
+			<!--			<content>-->
+			<!--			<Label text="Number of late Pickups">-->
+							
+							
+			<!--			</Label>	-->
+							
+							
+			<!--			</content>-->
+						
+						
+						
+			<!--		</CustomTile>-->
+			<!--		<CustomTile  class="customTile">-->
+			<!--			<content>-->
+			<!--			<Label text="Number of late Deliveries">-->
+							
+							
+			<!--			</Label>	-->
+							
+							
+			<!--			</content>-->
+						
+						
+						
+			<!--		</CustomTile>-->
+			<!--		<CustomTile  class="customTile">-->
+			<!--			<content>-->
+			<!--			<Label text="Promise Confirmation Rate">-->
+							
+							
+			<!--			</Label>	-->
+							
+							
+			<!--			</content>-->
+						
+						
+						
+			<!--		</CustomTile>-->
+			<!--		<CustomTile  class="customTile">-->
+			<!--			<content>-->
+			<!--			<Label text="Delivery Progress Rate">-->
+							
+							
+			<!--			</Label>	-->
+							
+							
+			<!--			</content>-->
+						
+						
+						
+			<!--		</CustomTile>-->
+				
+			<!--		<CustomTile  class="customTile">-->
+			<!--			<content>-->
+			<!--			<Label text="Reception Effort">-->
+							
+							
+			<!--			</Label>	-->
+							
+							
+			<!--			</content>-->
+						
+						
+						
+			<!--		</CustomTile>-->
+					
+			<!--		<CustomTile  class="customTileBig">-->
+			<!--			<content>-->
+			<!--			<Label text="Reception Planned vs Actual">-->
+							
+							
+			<!--			</Label>	-->
+							
+							
+			<!--			</content>-->
+						
+						
+						
+			<!--		</CustomTile>-->
+				
+
+					
+								<List id="commentsList"
+									
+									>
+										<FeedListItem
+					
+					icon=" "
+					
+					
+					
+					text=" " />
+							
+								<FeedListItem
+					sender="MQB2"
+					icon="util/Images/sad.PNG"
+					
+					
+					iconDensityAware="false"
+					info="Production coverage rate:68%"
+					timestamp="Error: 0 kanbans in error"
+					text="Current Production Delay: 0 Late Kanbans" />
+					
+					<FeedListItem
+					sender="MQB2"
+					icon="util/Images/sad.PNG"
+					
+					
+					iconDensityAware="false"
+					info="Production coverage rate:68%"
+					timestamp="Error: 0 kanbans in error"
+					text="Current Production Delay: 0 Late Kanbans" />
+					
+					
+						<FeedListItem
+					sender="MQB3"
+					icon="util/Images/happy.PNG"
+					
+					
+					iconDensityAware="false"
+					info="Production coverage rate:58%"
+					timestamp="Error: 1 kanbans in error"
+					text="Current Production Delay: 5 Late Kanbans" />
+							
+								</List>
+							
+	
+				
+		
+		</content>
+		<footer>
+			<Bar>
+				<contentLeft>
+					<Button text="Toggle" type="Accept" press="handleToggleClick" id="toggleButton"></Button>
+				</contentLeft>
+			
+				<contentRight>
+					<Label text="Best view in full screen"></Label>
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</core:View>

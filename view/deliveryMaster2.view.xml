@@ -1,0 +1,41 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ValeoDashboard.view.deliveryMaster2" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<customHeader>
+			<Toolbar>
+				<Button icon="sap-icon://nav-back" press="handleHomeSelect" />
+				<ToolbarSpacer />
+				<Title text="Deliverers" id="supid" />
+				<ToolbarSpacer />
+			</Toolbar>
+		</customHeader>
+
+		<subHeader>
+			<Bar id="searchBar">
+				<contentMiddle>
+					<SearchField id="searchField" showRefreshButton="true" liveChange="handleSearch" search="onSearch" width="100%">
+					</SearchField>
+				</contentMiddle>
+			</Bar>
+		</subHeader>
+		<content>
+			<!-- <SearchField showRefreshButton="true" tooltip="enter project name" liveChange="onSearch"></SearchField> -->
+		</content>
+		<List id="id" growingScrollToLoad="true" growing="true" items="{/}">
+			<items>
+				<ObjectListItem id="objectItem3" type="Active" title="{Inbound delivery}" number="{num}" press="onPress">
+					<firstStatus>
+						<ObjectStatus />
+					</firstStatus>
+					<attributes>
+						<ObjectAttribute text="{Delivered date}" />
+						<ObjectAttribute text="{Delivered time}" />
+					</attributes>
+				</ObjectListItem>
+			</items>
+		</List>
+		<footer>
+			<Toolbar>
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>

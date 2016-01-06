@@ -1,0 +1,27 @@
+{
+    "popover": [
+
+        {
+        "icon": "util/Images/happy.PNG",
+        "title":"MQB2",
+         "text": "Current Production Delay:0"
+        },
+
+        {
+        "icon": "util/Images/happy.PNG",
+        "title":"MQB2",
+        "text": "Current Production Delay:5"
+        },
+
+        {
+        "icon": "util/Images/happy.PNG",
+        "title":"MQB2",
+        "text": "Current Production Delay:4"
+        },
+        {
+        "icon": "util/Images/sad.PNG",
+        "title":"MQB2",
+        "text": "Current Production Delay:0"
+        }
+    ]
+}
