@@ -384,6 +384,7 @@ sap.ui.core.mvc.Controller.extend("ValeoDashboard.view.Dashboard", {
 		var svg = d3.select('.first').attr("width", '0px').attr("height", '0px');
 		if (text == "Supplier") {
 			this.getView().byId("supplier").setVisible(true);
+			this.getView().byId("select").setVisible(true);
 
 			firstDonutChart.update(dashboardThis.dataOfDelayedPromises[selectedSupplier], dashboardThis.dataOfDelayedPromises[selectedSupplier][0]["itemValue"])
 			secondDonutChart.update(dashboardThis.dataOfDelayedPickups[selectedSupplier], dashboardThis.dataOfDelayedPickups[selectedSupplier][0]["itemValue"])
@@ -394,6 +395,7 @@ sap.ui.core.mvc.Controller.extend("ValeoDashboard.view.Dashboard", {
 			secondDonutChart.update(dashboardThis.dataOfDelayedPickups["intermediaries"], dashboardThis.dataOfDelayedPickups["all"][0]["itemValue"])
 			thirdDonutChart.update(dashboardThis.dataOfDelayedDelivery["intermediaries"], dashboardThis.dataOfDelayedDelivery["all"][0]["itemValue"])
 			this.getView().byId("supplier").setVisible(false);
+			this.getView().byId("select").setVisible(true);
 
 		} else {
 			firstDonutChart.update(dashboardThis.dataOfDelayedPromises["all"], dashboardThis.dataOfDelayedPromises["all"][0]["itemValue"])
@@ -401,6 +403,7 @@ sap.ui.core.mvc.Controller.extend("ValeoDashboard.view.Dashboard", {
 			thirdDonutChart.update(dashboardThis.dataOfDelayedDelivery["all"], dashboardThis.dataOfDelayedDelivery["all"][0]["itemValue"])
 
 			this.getView().byId("supplier").setVisible(false);
+			this.getView().byId("select").setVisible(true);
 			
 		}
 

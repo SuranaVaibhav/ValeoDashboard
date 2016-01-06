@@ -2,16 +2,127 @@
 	padding: 1rem 2rem 0 2rem;
 }
 
+.sapMBtnInner {
+	padding: 10px !important;
+}
+
+.bigFont sapMBarChild sapMText sapMTextBreakWord sapMTextMaxWidth sapUiSelectable
+	{
+	color: lightgrey !important;
+}
+
+.sapMSplitContainer {
+	top: 0.9rem !important;
+}
+
+.sapMIBar-CTX .sapMBtnInner {
+	color: white !important;
+}
+
+.tileContainer {
+	height: 150% !important;
+}
+
+.customTile {
+	padding: 20px;
+	background: white;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	/* 	border-style: outset; */
+	/* 	border-width: 5px; */
+	/* 	width: 460px; */
+	width: 28rem !important;
+	height: 400px !important;
+}
+
+.customTileBig {
+	background: white;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	padding: 20px;
+	/* 	border-style: outset; */
+	/* 	border-width: 5px; */
+	width: 900px !important;
+	height: 400px !important;
+}
+
+@media screen and (max-device-width: 480px) {
+	.tileContainer {
+		height: 100% !important;
+	}
+	.bigFont {
+		padding-top: 3px !important;
+		font-size: 1rem !important;
+		margin: 3px !important;
+	}
+	.mediumFont {
+		font-size: 0.8rem !important;
+		margin: 9px !important;
+	}
+	.customTile {
+		padding: 10px !important;
+		background: white !important;
+		margin-right: 10px !important;
+		margin-bottom: 10px !important;
+		width: 330px !important;
+		height: 400px !important;
+	}
+	.customTileBig {
+		background: white;
+		margin-right: 20px !important;
+		margin-bottom: 10px !important;
+		padding: 10px !important;
+		/*     border-style: outset; */
+		/*     border-width: 5px; */
+		width: 330px !important;
+		height: 400px !important;
+	}
+}
+
+#__image0 {
+	height: 45px;
+}
+
+#__text3 {
+	color: lightgrey;
+}
+
+#__text2 {
+	color: grey;
+}
+
+.mediumFont sapMBarChild sapMText sapMTextBreakWord sapMTextMaxWidth sapUiSelectable
+	{
+	
+}
+
+.mediumFont sapMBarChild sapMText sapMTextBreakWord sapMTextMaxWidth sapUiSelectable
+	{
+	
+}
+
+.bigFont {
+	color: lightgrey !important;
+}
+
 .sap-tablet .navTableControlLayout {
 	padding: 1rem 1rem 1rem 1rem;
+}
+
+.mediumFont {
+	/* font-family: cursive; */
+	font-size: 1.5rem !important;
+	margin: 18px !important;
 }
 
 .sap-phone .navTableControlLayout {
 	padding: 0 0 0 0;
 }
+
 .sapMShellBrandingBar {
 	background-color: #95d238 !important;
 }
+
 .navTableItemLayout {
 	min-height: 5rem;
 	padding: 1rem 0 1rem 0;
@@ -25,33 +136,13 @@ rect {
 	stroke-width: 1;
 }
 
-.customTile {
-	padding: 20px;
-	background: white;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	/* 	border-style: outset; */
-	/* 	border-width: 5px; */
-/* 	width: 460px; */
-width:28rem;
-	height: 400px;
-}
-
-.customTileBig {
-	background: white;
-	margin-right: 40px;
-	margin-bottom: 20px;
-	padding: 20px;
-	/* 	border-style: outset; */
-	/* 	border-width: 5px; */
-	width: 900px;
-	height: 400px;
-}
-.bottom2rem{
+.bottom2rem {
 	bottom: 2.2rem;
 }
+
 .bigFont {
-	font-size: 3rem !important;
+	padding-top: 7px !important;
+	font-size: 2rem !important;
 	margin: 7px !important;
 }
 
@@ -59,9 +150,11 @@ width:28rem;
 	font-size: 1.2rem !important;
 	margin: 18px !important;
 }
-.chartLabel{
+
+.chartLabel {
 	font-size: 1rem !important;
 }
+
 .sapMBtnCustomIcon sapMBtnIcon sapMImg {
 	height: 21px !important;
 	width: 21px !important;
@@ -132,7 +225,6 @@ width:28rem;
 /* 	padding-top: 5px; */
 /* 	margin-top: 13px; */
 /* } */
-
 .__xmlview0--switch {
 	margin: 5px !important;
 }
@@ -178,26 +270,37 @@ width:28rem;
 	-moz-transition: all 0ms !important;
 }
 
+.sap-desktop .sapMIBar.sapMHeader-CTX {
+	background-color: white !important;
+	filter: none;
+	background-image: none;
+}
+
 .filterBarVarient {
 	margin-right: 1rem;
 }
 
 #__label10 {
-/* 	color: white; */
+	/* 	color: white; */
+	
 }
 
 #__label11 {
-/* 	color: white; */
+	/* 	color: white; */
+	
 }
 
 #__label9 {
-/* 	color: white; */
+	/* 	color: white; */
+	
 }
 
 #__label8 {
-/* 	color: white; */
+	/* 	color: white; */
+	
 }
 
 #__label7 {
-/* 	color: white; */
+	/* 	color: white; */
+	
 }

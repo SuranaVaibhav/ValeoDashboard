@@ -7,7 +7,7 @@ sap.ui.core.mvc.Controller.extend("ValeoDashboard.view.Main", {
 	
 	onInit : function() {
 		mainThis = this;
-		app = mainThis.getView().byId("fioriContent");
+		app = mainThis.getView().byId("fioriContent2");
 		mainApp = app;
 		//app.setDefaultTransitionNameMaster("show");
 		//app.setDefaultTransitionNameDetail("show");
@@ -62,6 +62,19 @@ sap.ui.core.mvc.Controller.extend("ValeoDashboard.view.Main", {
 		if (!isSelected) {
 			state = "Deselected"
 		}
+	},
+	
+	moneyPress:function(){
+		
+	var moneyBtn=	mainThis.getView().byId("money")
+	moneyBtn.tooltip('You saved money')
+		
+	},
+	leafPress:function(){
+		
+		var leafBtn=	mainThis.getView().byId("leaf")
+		leafBtn.tooltip("Think Green.There is no planet B")
+		
 	},
 	handleSelectionFinish : function(oEvent) {
 		
@@ -186,14 +199,41 @@ sap.ui.core.mvc.Controller.extend("ValeoDashboard.view.Main", {
 	 * itemclick: function(e){ if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) { e.dataSeries.visible = false; } else { e.dataSeries.visible = true; } chart7.render(); } }, }); chart7.render(); },500) } },
 	 */
 
-	switchChange : function() {
-	//	sap.ui.core.UIComponent.getRouterFor(this).navTo("SplitApp1");
-		if (app.getPage("TileAddButtonSplitApp") == null) {
-			var page = sap.ui.xmlview("TileAddButtonSplitApp", "ValeoDashboard.view.TileAddButtonSplitApp");
-			app.addPage(page);
-		}
-		app.to("TileAddButtonSplitApp", "flip");
-	},
+	// switchChange : function() {
+	// 	//	$(#__text3).css('color','#95d238');
+	// 	//		$(#__text3).css('color','grey');
+	// //	sap.ui.core.UIComponent.getRouterFor(this).navTo("SplitApp1");
+	// 	if (mainApp.getPage("TileAddButtonSplitApp") == null) {
+		
+	// 		var page = sap.ui.xmlview("TileAddButtonSplitApp", "ValeoDashboard.view.TileAddButtonSplitApp");
+	// 		mainApp.addPage(page);
+	// 	}
+	// 	mainApp.to("TileAddButtonSplitApp", "flip");
+	// 	if (mainApp.getPage("DashboardView") == null) {
+	// 	var page = sap.ui.xmlview("DashboardView", "ValeoDashboard.view.Dashboard");
+	// 		mainApp.back()
+		
+	// 	}
+	// 	mainApp.to("DashboardView", "flip");
+		
+	// },
+	switchChange : function(evt) {
+
+if(evt.oSource.getState()){
+	$('#__text3').css('color','grey')
+		$('#__text2').css('color','lightgrey')
+if (app.getPage("TileAddButtonSplitApp") == null) {
+var page = sap.ui.xmlview("TileAddButtonSplitApp", "ValeoDashboard.view.TileAddButtonSplitApp");
+app.addPage(page);
+}
+app.to("TileAddButtonSplitApp", "flip");
+}
+else {
+	$('#__text2').css('color','grey')
+		$('#__text3').css('color','lightgrey')
+app.backToTop();
+}
+},
 	
 	notifications : function() {
 		

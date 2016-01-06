@@ -1,4 +1,4 @@
- <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:fb="sap.ui.comp.filterbar"
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:fb="sap.ui.comp.filterbar"
 	xmlns:l="sap.ui.layout" xmlns:ui="sap.ui.commons" displayBlock="true"
 	controllerName="ValeoDashboard.view.Main" height="100%" xmlns:core="sap.ui.core"
 	xmlns="sap.m">
@@ -14,6 +14,7 @@
 			<customHeader>
 				<Bar>
 					<contentLeft>
+					<Image src="util/Images/valeo.png"/>
 						<Text class="mediumFont" text="Electronic Reorder Monitor" />
 					</contentLeft>
 
@@ -33,9 +34,9 @@
 					</contentMiddle>
 					<contentRight>
 						<!-- <HBox id="timer"> -->
-						<Button iconOnly="true" icon="sap-icon://money-bills" />
-						<Button iconOnly="true" icon="sap-icon://e-care" />
-						<Button iconOnly="true" icon="sap-icon://marketing-campaign"
+						<Button iconOnly="true" id="money" tooltip="You saved money" icon="util/Images/euro_notes-512.png" />
+						<Button iconOnly="true" id="leaf" tooltip="Think Green.There is no planet B" icon="util/Images/leaf.png" />
+						<Button iconOnly="true" id="notif" icon="util/Images/bell.png"
 							press="showPopOver" />
 						<Text class="bigFont" id="bigFont" text="13:50:55" />
 						<!-- <core:HTML id="Container" -->
@@ -50,17 +51,12 @@
 			</customHeader>
 
 			<content>
-				<!-- <SplitApp id="splitApp" mode="HideMode" showHeader="false"> -->
-				<!-- <detailPages> -->
-				<!-- filled dynamically by routing -->
-				<mvc:XMLView viewName="ValeoDashboard.view.Dashboard">
-				</mvc:XMLView>
-				<!-- </detailPages> -->
-				<!-- <masterPages> -->
-				<!-- <mvc:XMLView viewName="ValeoDashboard.view.Master"> -->
-				<!-- </mvc:XMLView> -->
-				<!-- </masterPages> -->
-				<!-- </SplitApp> -->
+			
+				<App id="fioriContent2">
+<mvc:XMLView viewName="ValeoDashboard.view.Dashboard">
+</mvc:XMLView>
+</App>
+		
 			</content>
 			<footer id="Footer">
 				<Toolbar>

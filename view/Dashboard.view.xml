@@ -1,6 +1,6 @@
-<core:View controllerName="ValeoDashboard.view.Dashboard"
+<core:View controllerName="ValeoDashboard.view.Dashboard" height="100%"
 	xmlns:fb="sap.ui.comp.filterbar" xmlns:ui="sap.ui.commons" xmlns:core="sap.ui.core"
-	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns="sap.m">
+	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns="sap.m" xmlns:variant="sap.ui.comp.variants">
 
 
 	<!-- <Page id="dashboardView" -->
@@ -9,18 +9,18 @@
 	<!-- showNavButton="false"> -->
 	<!-- <content> -->
 	<l:VerticalLayout width="100%">
- 
+	
 		<fb:FilterBar showRestoreButton="false" showClearButton="false"
 			filterBarExpanded="false" showGoOnFB="false">
 			<fb:filterItems>
-				<fb:FilterItem name="saveVariant" label="Save Variant ">
+				<fb:FilterItem name="saveVariant" label="">
 					<fb:control>
-						<HBox>
-							<!-- <Title text="Save Variant " /> -->
-							<!-- <Title text=" " /> -->
-							<core:Icon src="sap-icon://arrow-down" press="variantDrop" />
-						</HBox>
-
+					<variant:VariantManagement standardItemText="Default" select="onSelect" save="onSave" enabled="true" manage="onManage" showExecuteOnSelection="true" showShare="true">
+			<variant:variantItems>
+				<variant:VariantItem text="Variant 2" key="Variant2" global="true" readOnly="false" lifecyclePackage="/UIF/LREP_HOME_CONTENT" accessOptions="RWD"/>
+				<variant:VariantItem text="Variant 3" key="Variant3" global="true" readOnly="false" lifecyclePackage="$TMP" accessOptions="RWD"/>
+			</variant:variantItems>
+		</variant:VariantManagement>
 					</fb:control>
 				</fb:FilterItem>
 
@@ -57,7 +57,7 @@
 
 				<fb:FilterItem name="Dana" label="Select">
 					<fb:control>
-						<VBox id="select" visible="false">
+						<VBox id="select" visible="true">
 							<!-- <Label text="Select" /> -->
 							<MultiComboBox id="multiSelect" selectionChange="handleSelectionChange"
 								selectionFinish="handleSelectionFinish" width="500px">
@@ -74,7 +74,7 @@
 			</fb:filterItems>
 		</fb:FilterBar>
 	</l:VerticalLayout>
-	<TileContainer height="1000px">
+	<TileContainer class="tileContainer ">
 		<CustomTile id="NumberDelayedPromises" press="chartTable"
 			class="customTile sapMTile">
 
