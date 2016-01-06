@@ -1,4 +1,4 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:fb="sap.ui.comp.filterbar"
+ <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:fb="sap.ui.comp.filterbar"
 	xmlns:l="sap.ui.layout" xmlns:ui="sap.ui.commons" displayBlock="true"
 	controllerName="ValeoDashboard.view.Main" height="100%" xmlns:core="sap.ui.core"
 	xmlns="sap.m">
